@@ -129,35 +129,35 @@ if (strpos($ban_all , "$from_id") !== false) {
 
 include "Access.php";
 include "Button.php";
-include "plugin/asli.php";
+include "asli.php";
 
 //lock bot
-include "plugin/lockvidio.php";
-include "plugin/lockaudio.php";
-include "plugin/lockmusic.php";
-include "plugin/lockphoto.php";
-include "plugin/locklink.php";
-include "plugin/lockusername.php";
-include "plugin/lockoprator.php";
-include "plugin/locklocation.php";
-include "plugin/lockcontact.php";
-include "plugin/locksticker.php";
-include "plugin/lockforward.php";
-include "plugin/lockgame.php";
-include "plugin/addandremove.php";
-include "plugin/banall.php";
-include "plugin/lockgroup.php";
-include "plugin/admin.php";
-include "plugin/id.php";
-include "plugin/lockfarsi.php";
-include "plugin/locken.php";
-include "plugin/welcome.php";
-include "plugin/dateandtime.php";
-include "plugin/leftgroup.php";
-include "plugin/settings.php";
-include "plugin/newtitle.php";
-include "plugin/newphoto.php";
-include "plugin/silent.php";
+include "lockvidio.php";
+include "lockaudio.php";
+include "lockmusic.php";
+include "lockphoto.php";
+include "locklink.php";
+include "lockusername.php";
+include "lockoprator.php";
+include "locklocation.php";
+include "lockcontact.php";
+include "locksticker.php";
+include "lockforward.php";
+include "lockgame.php";
+include "addandremove.php";
+include "banall.php";
+include "lockgroup.php";
+include "admin.php";
+include "id.php";
+include "lockfarsi.php";
+include "locken.php";
+include "welcome.php";
+include "dateandtime.php";
+include "leftgroup.php";
+include "settings.php";
+include "newtitle.php";
+include "newphoto.php";
+include "silent.php";
 
 //===Dlkha===//
 
