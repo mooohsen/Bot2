@@ -3,7 +3,7 @@
 ob_start();
 
 // Token
-define('API_KEY','a1');
+define('1331689088:AAG6MVWO7wG-QjVFB0sXqrs7AJXAGsPQx9M','a1');
 
 // Admins
 $admin =  "a3";
