@@ -5,23 +5,23 @@
 // Variable Source
 
 $update = json_decode(file_get_contents('php://input'));
-$for = file_get_contents("admin/admin.txt");
+$for = file_get_contents("admin.txt");
 $data = $update->callback_query->data;
 $chat_id = $update->callback_query->message->chat->id;
 $username = $update->callback_query->message->chat->username;
 $first_name = $update->callback_query->message->chat->first_name;
 $last_name = $update->callback_query->message->chat->last_name;
 $fromid = $update->callback_query->message->from->id;
-$grouplist = file_get_contents('user/'.$from_id."/grouplist.txt");
+$grouplist = file_get_contents($from_id."/grouplist.txt");
 $from_id = $update->message->from->id;
-$command = file_get_contents("user/".$from_id."/command.txt");
-$pm_ch = file_get_contents("user/".$from_id."/pm-to-ch.txt");
+$command = file_get_contents($from_id."/command.txt");
+$pm_ch = file_get_contents($from_id."/pm-to-ch.txt");
 $message_id = $update->callback_query->message->message_id;
 $message_id_feed = $update->message->message_id;
 $message = $update->message;
 $mid = $message->message_id;
 $pm2 = file_get_contents("post.txt");
-$msgusergroup = file_get_contents("Group/".$Group."/".$from_id."/msg.txt");
+$msgusergroup = file_get_contents($Group."/".$from_id."/msg.txt");
 $first = $message->from->first_name;
 $lastf = $message->from->last_name;
 
@@ -53,7 +53,7 @@ $reply_photo = $update->message->reply_to_message->photo;
 $reply_text = $update->message->reply_to_message->text;
 $reply_photo_id = $update->message->reply_to_message->photo->file_id;
 $block = file_get_contents("admin/block-list.txt");
-$nophoto = file_get_contents("photo/nophoto.txt");
+$nophoto = file_get_contents("nophoto.txt");
 
 $feedback = file_get_contents("admin/feedback.txt");
 $video = $update->message->video->file_id;
