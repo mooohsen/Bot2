@@ -9,25 +9,25 @@ define('1331689088:AAG6MVWO7wG-QjVFB0sXqrs7AJXAGsPQx9M','a1');
 $admin =  "a3";
 $admin1 = "a3";
 $admin2 = "a3";
-$admin3 = "Group/b".$Group."/AdminList.txt";
+$admin3 = "b".$Group."/AdminList.txt";
 
 
 // Tabee Save
 function save($filename,$TXTdata)
 	{
-	$myfile = fopen("user/".$filename, "w") or die("Unable to open file!");
+	$myfile = fopen($filename, "w") or die("Unable to open file!");
 	fwrite($myfile, "$TXTdata");
 	fclose($myfile);
 	}
 	function saveea($filename,$TXTdata)
 	{
-		$myfile = fopen("active/".$filename, "w") or die("Unable to open file!");
+		$myfile = fopen($filename, "w") or die("Unable to open file!");
 		fwrite($myfile, "$TXTdata");
 		fclose($myfile);
 	}
 	function savee($filename,$TXTdata)
 	{
-	$myfile = fopen("Group/".$filename, "w") or die("Unable to open file!");
+	$myfile = fopen($filename, "w") or die("Unable to open file!");
 	fwrite($myfile, "$TXTdata");
 	fclose($myfile);
 	}
@@ -40,7 +40,7 @@ function timeout($filename,$TXTdata)
 	}
 	function daysave($filename,$TXTdata)
 	{
-	$myfile = fopen("day/".$filename, "w") or die("Unable to open file!");
+	$myfile = fopen($filename, "w") or die("Unable to open file!");
 	fwrite($myfile, "$TXTdata");
 	fclose($myfile);
 	}
