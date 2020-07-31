@@ -1443,7 +1443,7 @@ httpt('sendmessage',[
     'chat_id'=>$chat_id, 
     'text'=>" 
 شما میتوانید با اشتراک گذاری لینک زیر و کلیک افراد برروی لینک برنده ی 1 طلا شوید🚩👼
-https://telegram.me/YOURBOTID?start=$chat_id
+https://telegram.me/1331689088:AAG6MVWO7wG-QjVFB0sXqrs7AJXAGsPQx9M?start=$chat_id
 ",
 'parse_mode'=>'MARKDOWN',
 ]);
