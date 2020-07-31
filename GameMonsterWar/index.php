@@ -2,7 +2,8 @@
 @Botsorce*/
 
 //کلمه YOURBOTID را سرچ کنید و آیدی ربات خود را جایگزین کنید
-");
+//");
+<?php
 include "telegram.php";
 include "lvp.php";
 unlink("error_log");
