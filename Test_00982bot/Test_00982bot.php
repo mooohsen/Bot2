@@ -12,5 +12,5 @@ echo fread($myfile,filesize("a.txt"));
 fclose($myfile);
 
 //$content = ['chat_id' => $chat_id, 'text' => $msgType.' '.$text];
-$content = ['chat_id' => $chat_id, 'text' => $myfile];
+$content = ['chat_id' => $chat_id, 'text' => filesize];
 $telegram->sendMessage($content);
