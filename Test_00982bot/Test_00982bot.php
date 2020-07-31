@@ -8,7 +8,7 @@ $chat_id 		 	 = $telegram->ChatID();
 $msgType		  	 = $telegram->getUpdateType();
 
 $myfile = fopen("a.txt", "r") or die("Unable to open file!");
-echo fread($myfile,filesize("webdictionary.txt"));
+echo fread($myfile,filesize("a.txt"));
 fclose($myfile);
 
 //$content = ['chat_id' => $chat_id, 'text' => $msgType.' '.$text];
