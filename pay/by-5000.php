@@ -1,7 +1,7 @@
 <?php
 include("../../gpgram/base.php");
 $MerchantID = 'a08a1332-48ef-11e7-a2ea-005056a205be';
-$Amount = 5000;
+$Amount = 0;
 $Authority = $_GET['Authority'];
 $user = $_GET['id'];
 if ($_GET['Status'] == 'OK'){
