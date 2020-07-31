@@ -8,9 +8,9 @@ $chat_id 		 	 = $telegram->ChatID();
 $msgType		  	 = $telegram->getUpdateType();
 
 $myfile = fopen("a.txt", "r") or die("Unable to open file!");
-echo $m = fread($myfile,filesize("a.txt"));
+echo $m = fread($myfile,$n=filesize("a.txt"));
 fclose($myfile);
 
 //$content = ['chat_id' => $chat_id, 'text' => $msgType.' '.$text];
-$content = ['chat_id' => $chat_id, 'text' => $m];
+$content = ['chat_id' => $chat_id, 'text' => $m.' '.$n];
 $telegram->sendMessage($content);
