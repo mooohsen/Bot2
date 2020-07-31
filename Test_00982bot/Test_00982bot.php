@@ -6,5 +6,11 @@ $telegram = new Telegram($bot_id);
 $text 			 	 = $telegram->Text();	
 $chat_id 		 	 = $telegram->ChatID();
 $msgType		  	 = $telegram->getUpdateType();
-$content = ['chat_id' => $chat_id, 'text' => $msgType.' '.$text];
+
+$myfile = fopen("a.txt", "r") or die("Unable to open file!");
+//echo fread($myfile,filesize("webdictionary.txt"));
+fclose($myfile);
+
+//$content = ['chat_id' => $chat_id, 'text' => $msgType.' '.$text];
+$content = ['chat_id' => $chat_id, 'text' => $myfile];
 $telegram->sendMessage($content);
